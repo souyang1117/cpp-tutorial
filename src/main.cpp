@@ -1,8 +1,12 @@
 #include <iostream>
+#include "Board.h"
+#include "Game.h"
 
 int main()
 {
-	std::cout << "\n It works! \n";
+	Board board;
+	Game game(board);
+	game.run();
 
 	return 0;
 }
