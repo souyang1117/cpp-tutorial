@@ -15,6 +15,16 @@ public:
 	bool check(); // check win condition
 	bool update(int position); // populate with mark 
 
+	char* getBoard()
+	{
+		return &board_[0][0];
+	}
+
+	char getMark()
+	{
+		return mark_;
+	}
+
 private:
 	char board_[SIZE][SIZE];
 	char mark_;

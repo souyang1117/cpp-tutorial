@@ -1,8 +1,7 @@
-#include <iostream>
+#include "gtest/gtest.h"
 
-int main()
+int main(int argc, char **argv)
 {
-	std::cout << "\n The test binary is working! \n";
-	
-	return 0;
+	::testing::InitGoogleTest(&argc, argv);
+	return RUN_ALL_TESTS();;
 }

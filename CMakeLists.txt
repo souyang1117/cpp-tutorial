@@ -12,6 +12,7 @@ set(INC_FILES_DIR
 )
 
 if (BUILD_TESTS)
+	add_subdirectory(external/googletest)
 	add_subdirectory(test)
 endif()
 
@@ -23,4 +24,6 @@ add_executable(CPPTutorial
 	${SRC_FILES}
 )
 
-
+add_library(CPPTutorial-static STATIC
+	${SRC_FILES}
+)
