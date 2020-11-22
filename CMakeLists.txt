@@ -11,6 +11,9 @@ set(INC_FILES_DIR
 	include/
 )
 
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 if (BUILD_TESTS)
 	add_subdirectory(external/googletest)
 	add_subdirectory(test)
