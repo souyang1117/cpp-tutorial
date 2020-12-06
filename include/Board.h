@@ -8,19 +8,19 @@ class Board
 {
 public:
 	Board() = default;
-	~Board() = default;
+	virtual ~Board() = default;
 
-	void init(); // init board
-	void draw(); // draw board on screen
-	bool check(); // check win condition
-	bool update(int position); // populate with mark 
+	virtual void init(); // init board
+	virtual void draw(); // draw board on screen
+	virtual bool check(); // check win condition
+	virtual bool update(int position); // populate with mark 
 
-	char* getBoard()
+	virtual char* getBoard()
 	{
 		return &board_[0][0];
 	}
 
-	char getMark()
+	virtual char getMark()
 	{
 		return mark_;
 	}

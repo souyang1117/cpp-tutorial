@@ -10,4 +10,4 @@ include_directories(../include/)
 
 add_test(NAME CPPTutorial-test COMMAND CPPTutorial-test)
 
-target_link_libraries(CPPTutorial-test PUBLIC CPPTutorial-static gtest)
+target_link_libraries(CPPTutorial-test PUBLIC CPPTutorial-static gtest gmock)

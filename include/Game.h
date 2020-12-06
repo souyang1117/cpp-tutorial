@@ -6,13 +6,13 @@
 class Game
 {
 public:
-	Game(const Board& board);
+	Game(Board* board);
 	~Game() = default;
 
 	void run();
 
 private:
-	Board board_;
+	Board* board_;
 };
 
 #endif

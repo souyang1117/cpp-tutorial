@@ -14,7 +14,10 @@ set(INC_FILES_DIR
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Og -ggdb3")
+
 if (BUILD_TESTS)
+	set(BUILD_GMOCK ON)
 	add_subdirectory(external/googletest)
 	add_subdirectory(test)
 endif()

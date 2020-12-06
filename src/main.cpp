@@ -4,9 +4,10 @@
 
 int main()
 {
-	Board board;
+	Board* board = new Board();
 	Game game(board);
 	game.run();
 
+	delete board;
 	return 0;
 }
