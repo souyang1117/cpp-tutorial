@@ -6,5 +6,5 @@ Adding Buildbot CI to the project.
 
 do I see the touched file? yes...
 
-testing rename now.
+testing rename now in bb branch!!
 
